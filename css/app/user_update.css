@@ -1,0 +1,57 @@
+.container-main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container-main form{
+    width: 100%;
+    max-width: 35rem;
+}
+.container-main form .container-input-image{
+    width: 100%;
+    height: 15rem;
+    margin-top: 1rem;
+}
+.container-main form .container-input-image #view-photo{
+    max-height: 7.8rem;
+    width: auto;
+    object-fit: cover;
+}
+.container-main form .container-labels{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .8rem;
+    margin-top: 2rem;
+}
+.container-main form .container-labels label{
+    width: 100%;
+}
+.container-main form .container-labels label span{
+    font-size: .9rem;
+}
+.container-main form .container-labels label .container-input-select{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: .4rem;
+}
+.container-main form .container-labels label .container-input-select select{
+    width: 5rem;
+}
+.container-main form .container-button{
+    width: 100%;
+    margin-top: 2rem;
+}
+.container-main form .container-button button{
+    width: 100%;
+    background-color: var(--color-main-1);
+    color: white;
+}
+@media screen and (orientation: portrait) {
+    .container-main form .container-labels{
+        grid-template-columns: 1fr;
+    }   
+}

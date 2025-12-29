@@ -1,0 +1,47 @@
+# Environment
+.env
+.env.*
+!.env.example
+
+# Composer dependencies
+/vendor/
+
+# Runtime writable data
+/writable/cache/*
+!/writable/cache/index.html
+/writable/logs/*
+/writable/session/*
+/writable/debugbar/*
+/writable/uploads/*
+!/writable/uploads/index.html
+/writable/framework/*
+
+# User uploads
+/img/uploads/*
+/video/uploads/*
+
+# PHPUnit
+/phpunit.xml
+/.phpunit.result.cache
+
+# Node (if used)
+node_modules/
+
+# IDE/editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
